@@ -110,8 +110,8 @@ async def obtener_datos(cc, fecha_inicio, fecha_fin):
 
 async def ejecutable ():
     cedulas = input("ingrese las cedulas que quiere buscar, separadas por [,]")
-    fecha_inicio = str(input("AÑO-MES-DIA"))
-    fecha_fin = str(input("AÑO-MES-DIA"))
+    fecha_inicio = str(input("AÑO-MES-DIA INICIO BUSQUEDA"))
+    fecha_fin = str(input("AÑO-MES-DIA FIN BUSQUEDA"))
     partes = cedulas.split(",")
     cedulas_a_buscar = [cedula.strip()for cedula in partes]
     for cedula in cedulas_a_buscar:
